@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body bgcolor="#73B0E4">
-    <header>
-        <h1 style="color:#002D72; text-align: center;">Johns Hopkins University</h1>
+<body>
+    <div class="top">
         <div class="container">
-            <img src="./img/Screen Shot 2024-01-03 at 10.42.59 PM.png">
-            <div class="description-container">
-                <h2 style="color:#002D72; text-align: center;"> Abdelrahman Hamimi - MS, BS, BA</h2>
-                <h3 id="desc">Hi! I am Ab, a computer science masters student at JHU. Below are some of the projects that I've had the privelage of working on. Thanks for checking out my website!</h3>
+            <nav>
+                <ul>   
+                    <li><a href="#">Welcome</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#end">Contacts</a></li>
+                </ul>
+            </nav>
+            <img src="./img/Johns_Hopkins_Blue_Jays.svg.png" class="bluejay"/>
+        </div>
+        <div class="description">
+            <img src="./img/Screen Shot 2024-01-03 at 10.42.59 PM.png" id="me">
+            <div>
+                <p style="color:#002D72; margin-left: 4.9%;">Currently Enrolled in BS/MS Computer Science & BA Economics @ JHU</p>
+                <br>
+                <h1>Hey! I am <span id="firstName">Abdelrahman</span><br><span id="lastName">Hamimi</span></h1>
+                <br>
             </div>
         </div>
-    </header>
-
-    <section>
-        <h2>
-            About
-        </h2>
-    </section>
+    </div>
     
     <section>
         <h2>
@@ -30,14 +35,16 @@
         </h2>
     </section>
 
-    <section>
-        <h2>
-            Contact Me
-        </h2>
-    </section>
+    <hr>
+    <br>
+    <footer id="end">
+        <div class="bottom">
+            <a href="https://www.linkedin.com/in/abdelrahman-hamimi-2064ab202/" target="_blank"><img src="./img/LinkedIn-logo.png" id="linkedin-logo"></a>
+            <p>aabdul18@jhu.edu</p>
 
-    <footer>
-        <h1 style="text-align:center;color:#002D72;">Thank you!</h1>
+        </div>
+        
     </footer>
+    <br>
 </body>
 </html>
