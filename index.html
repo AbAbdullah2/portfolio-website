@@ -12,7 +12,7 @@
             <nav>
                 <ul>   
                     <li><a href="#">Welcome</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#proj">Projects</a></li>
                     <li><a href="#end">Contacts</a></li>
                 </ul>
             </nav>
@@ -20,7 +20,7 @@
         </div>
         <div class="description">
             <img src="./img/Screen Shot 2024-01-03 at 10.42.59 PM.png" id="me">
-            <div>
+            <div class="introduction">
                 <p style="color:#002D72; margin-left: 4.9%;">Currently Enrolled in BS/MS Computer Science & BA Economics @ JHU</p>
                 <br>
                 <h1>Hey! I am <span id="firstName">Abdelrahman</span><br><span id="lastName">Hamimi</span></h1>
@@ -29,12 +29,48 @@
         </div>
     </div>
     
-    <section>
-        <h2>
-            Projects
-        </h2>
+    <br>
+    <br>
+    <br>
+    
+    <br id="proj">
+    
+    <section class="projectSection">
+        <div>
+            <h2 id="projectsTitle">
+                Projects
+            </h2>
+        </div>
+
+        <div class="projectsBody">
+            <div class="card-container" id="congressProj">
+                <a href="https://ugrad.cs.jhu.edu/~rabicha1/cs315/project/project.html" target="_blank">
+                    <img src="./img/Screen Shot 2024-01-05 at 12.52.24 PM.png" class="projCard" alt="Descriptive Alt Text"/>
+                    <div class="overlay">
+                        <div class="textTitle">Congressional Database System (2023)</div>
+                        <div class="text">Developed a comprehensive database system for querying data for the 117th US Congress, 
+                            utilizing Python to extract and organize ProPublica API information and SQL to structure a database, 
+                            crafting 18 SQL procedures for efficient data retrieval, designing a PHP and HTML web interface for 
+                            user interaction, and collaborating closely with a peer throughout all development phases.</div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-container" id="HopOut">
+                <a href="https://hopout.onrender.com/" target="_blank">
+                    <img src="./img/Screen Shot 2024-01-05 at 3.49.09 PM.png" class="projCard" alt="Descriptive Alt Text"/>
+                    <div class="overlay">
+                        <div class="textTitle">HopOut (2023)</div>
+                        <div class="text">Conceptualized a full-stack web application aiming to foster student connections at Johns Hopkins through 
+                            event-planning, then developed a functional prototype within a 7-person team using the MERN stack (MongoDb, Express, React, Node). The app 
+                            features a user-friendly interface for event creation and management, integrating Google Maps API for event visualization.</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          
     </section>
 
+    <br>
     <hr>
     <br>
     <footer id="end">

@@ -17,32 +17,39 @@ body{
 }
 
 .container{
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     background-color: #231F20;
     border: #170101 solid 6px;
-    box-shadow: 10px 10px 10px #fff;
+
 }
 
-.bluejay{
-    max-height: 100px;
+.bluejay {
+    flex: 0 1 auto;
+    max-height: 80px; 
+    min-width: 0; 
+    overflow: hidden; 
+    width: clamp(50px, 5vw, 80px); 
+    height: clamp(50px, 5vw, 80px);
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin-right: 0;
+
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 15px 25px;
+    margin: clamp(5px, 2vw, 25px);
     font-size: auto;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    font-size: clamp(12px, 2vw, 22px);
 }
 
 a{
@@ -51,6 +58,7 @@ a{
     font-size: 22px;
     position: relative;
     transition: .4s;
+    font-size: clamp(16px, 2vw, 22px);
 }
 
 a:hover{
@@ -58,18 +66,23 @@ a:hover{
     transition: 0.4s;
 }
 
-#me {
-    height: 500px; 
-    border-radius: 50%;
-    margin-left: 10%;
-    border: #002D72 solid 2px;
-}
-
 .description{
-    padding-top: 3%;
+    padding-top: 5%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#me {
+    max-width: 500px;  
+    width: clamp(250px, 50vw, 500px); 
+    border-radius: 50%;
+    margin-left: 2vw auto;
+    border: #231F20 solid 2px;
+    height: auto;
+    box-sizing: border-box;
 }
 
 #firstName{
@@ -89,9 +102,85 @@ a:hover{
     font-size: 50px;
     border-bottom: 3px solid #231F20;
     z-index: 1;
-    margin-left:62.35%;
+    margin-left: 62.35%;
 }
 
+.projectSection{
+    background: #fff;
+    padding: 2vw;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 0px 0px 10px 4px #002D72;
+    border-radius: 15px;
+    padding-bottom: 10%;
+    margin-bottom: 3%;
+}
+
+#projectsTitle{
+    position: relative;
+    text-align: center;
+    color: #231F20;
+}
+
+.projectsBody {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-container {
+    position: relative;
+    max-width: calc(50% - 4%); /* Adjust based on the number of cards per row */
+    margin-top: 4%;
+    margin-left: 2%;
+}
+
+.projCard {
+    max-height: 360px;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 1px #231F20;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 4px; /* Match the border-radius of the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textTitle{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding: 30px;
+
+}
+
+.card-container:hover .overlay {
+    opacity: 1;
+}
 
 
 
@@ -104,11 +193,6 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
 
 .bottom{
     text-align:center;
