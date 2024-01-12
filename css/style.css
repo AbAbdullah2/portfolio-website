@@ -40,7 +40,6 @@ body{
     }
 }
 
-
 nav{
     display: flex;
 }
@@ -87,17 +86,12 @@ a:hover{
     box-sizing: border-box; 
 }
 
-
 #firstName{
     color:#002D72;
     font-size: 50px;
     border-top: 3px solid #231F20;
     z-index: 1;
-}
-
-#firstName:hover,#lastName:hover{
-    color: #fff;
-    transition: 0.4s;
+    animation: animationForNames 4s infinite;
 }
 
 #lastName{
@@ -106,9 +100,45 @@ a:hover{
     border-bottom: 3px solid #231F20;
     z-index: 1;
     margin-left: 62.35%;
+    animation: animationForNames 4s infinite;
+}
+
+#githubImage{
+    max-width: 4vw; 
+    margin-left: 88%;
+}
+
+@keyframes animationForNames {
+    0%, 100% {
+        color:#002D72;
+    }
+    50% {
+        color: #fff;
+        text-shadow: 1px 1px 1px #231F20;
+    }
+}
+
+@keyframes animationForIntro {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animation-bigger {
+    animation: animationForIntro 3s forwards;
 }
 
 @media (max-width: 1085px){
+    #githubImage{
+        max-width: 6vw; 
+        margin-left: 90%;
+    }
+
     .description{
         height: calc(100vh - 80px);
         margin-bottom: -80px;
@@ -123,7 +153,7 @@ a:hover{
     }
 
     #Majors{
-        text-align: center;
+        text-align: right;
         font-size: 1.9vw;
     }
 
@@ -279,8 +309,8 @@ a:hover{
 hr {
     width: 30%;
     border: none;
-    background-color: #231F20;
-    height: 1.5px;
+    background-color: #fff;
+    height: 1.8px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -316,7 +346,7 @@ hr {
     }
 
     hr {
-        width: 80%;
+        width: 70%;
     }
 
     #linkedin-logo {

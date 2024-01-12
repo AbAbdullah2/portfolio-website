@@ -11,20 +11,21 @@
         <div class="container">
             <nav>
                 <ul>   
-                    <li><a href="#">Welcome</a></li>
+                    <li><a href="#top" id="welcome">Welcome</a></li>
                     <li><a href="#proj">Projects</a></li>
                     <li><a href="#end">Contacts</a></li>
                 </ul>
             </nav>
             <img src="./img/Johns_Hopkins_Blue_Jays.svg.png" class="bluejay"/>
         </div>
-        <div class="description">
+        <div class="description" id="d">
             <img src="./img/Screen Shot 2024-01-03 at 10.42.59 PM.png" id="me">
             <div class="introduction">
                 <p id="Majors" style="color:#002D72; margin-left: 4.9%;">Currently Enrolled in BS/MS Computer Science & BA Economics @ JHU</p>
                 <br>
                 <h1>Hey! I am <span id="firstName">Abdelrahman</span><br><span id="lastName">Hamimi</span></h1>
                 <br>
+                <a target="_blank" href="https://github.com/AbAbdullah2?tab=overview&from=2023-12-01&to=2023-12-31"><img src="./img/git.png" id="githubImage"></a>
             </div>
         </div>
     </div>
@@ -34,7 +35,6 @@
     <br>
 
     <br id="proj">
-    
     <section class="projectSection">
         <div>
             <h2 id="projectsTitle">
@@ -46,7 +46,7 @@
             <div class="card-container" id="congressProj">
                 <div class="imagePortion">
                     <a href="https://ugrad.cs.jhu.edu/~rabicha1/cs315/project/project.html" target="_blank">
-                        <img src="./img/Screen Shot 2024-01-05 at 12.52.24 PM.png" class="projCard" alt="Descriptive Alt Text"/>
+                        <img src="./img/Screen Shot 2024-01-05 at 12.52.24 PM.png" class="projCard" alt="117th Congress Database System"/>
                         <div class="overlay">
                             <div class="textTitle">Congressional Database System (2023)</div>
                             <div class="text">Developed a comprehensive database system for querying data for the 117th US Congress, 
@@ -71,7 +71,7 @@
             <div class="card-container" id="HopOut">
                 <div class="imagePortion">
                     <a href="https://hopout.onrender.com/" target="_blank">
-                        <img src="./img/Screen Shot 2024-01-05 at 3.49.09 PM.png" class="projCard" alt="Descriptive Alt Text"/>
+                        <img src="./img/Screen Shot 2024-01-05 at 3.49.09 PM.png" class="projCard" alt="MERN Web App - HopOut"/>
                         <div class="overlay">
                             <div class="textTitle">HopOut (2023)</div>
                             <div class="text">Conceptualized a full-stack web application aiming to foster student connections at Johns Hopkins through 
@@ -90,14 +90,13 @@
                     </ul>
                 </div>
             </div>
-
-            
         </div>
-          
     </section>
+
     <div class="spacing"></div>
     <hr>
     <br>
+
     <footer id="end">
         <div class="bottom">
             <a href="https://www.linkedin.com/in/abdelrahman-hamimi-2064ab202/" target="_blank" id="lig"><img src="./img/LinkedIn-logo.png" id="linkedin-logo"></a>
@@ -105,5 +104,7 @@
         </div>  
     </footer>
     <br>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
