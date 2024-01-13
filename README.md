@@ -1,1 +1,1 @@
-My portfolio website coded from scratch in HTML, CSS & JS
+Personal portfolio website built from scratch in HTML, CSS & Javascript
