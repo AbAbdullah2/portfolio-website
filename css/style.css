@@ -226,14 +226,20 @@ a:hover{
     border: #002D72 solid 1px;
 }
 
+.imagePortion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,0,0,0.8);
@@ -313,7 +319,7 @@ a:hover{
 }
 
 .spacing {
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 hr {
