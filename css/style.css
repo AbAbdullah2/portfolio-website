@@ -28,6 +28,16 @@ body{
 .bluejay {
     width: clamp(0px, 12vw, 75px);
     height: clamp(0px, 12vw, 75px);
+    animation: animationForBlueJay 4s infinite;
+}
+
+@keyframes animationForBlueJay {
+    0%, 100% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.03);
+    }
 }
 
 @media (max-width: 330px) {
