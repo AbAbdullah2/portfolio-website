@@ -255,22 +255,24 @@ a:hover{
     font-size: 1.4vw;
     text-align: left;
     margin-bottom: 0;
+    font-weight: bold;
+    margin-top: 3%;
 }
 
 .text {
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     text-align: left;
     padding: 2vw;
 }
 
 @media (max-width: 768px) {
     .textTitle {
-        font-size: 2.5vw;
+        font-size: 2.3vw;
     }
 
     .text {
-        font-size: 1.9vw;
+        font-size: 1.8vw;
     }
 }
 
