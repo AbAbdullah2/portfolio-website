@@ -182,9 +182,8 @@ a:hover{
     padding: 2vw;
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 9px;
-    border-top: #231F20 solid 1.8px;
-    border-bottom: #231F20 solid 1.8px;
+    border-top: #ffffff solid 1.8px;
+    border-bottom: #ffffff solid 1.8px;
     padding-bottom: 80px;
 }
 
@@ -327,8 +326,8 @@ a:hover{
 hr {
     width: 30%;
     border: none;
-    background-color: #170101;
-    height: 1.8px;
+    background-color: #ffffff;
+    height: 1.6px;
     margin-left: auto;
     margin-right: auto;
 }
